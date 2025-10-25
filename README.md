@@ -33,17 +33,15 @@ CREATE TABLE estudiantes (
   FOREIGN KEY (id_tipo_sangre) REFERENCES tipos_sangre(id_tipo_sangre)
 );
 
-## Backend
+## Back
 ```
-cd backend-dotnet
+cd back-dotnet
 dotnet restore
-# abre appsettings.json y coloca tu password de MySQL
 dotnet run
 ```
-## Frontend
+## Front
 ```
-cd frontend-node
-cp .env.sample .env  # ajusta API_BASE si tu backend usa otro puerto
+cd front-node
 npm install
 npm start
 ```
