@@ -1,15 +1,15 @@
-# UMG Proyecto — API .NET + Frontend Node/EJS
+# API .NET + Frontend Node/EJS
 
 Estructura:
 ```
-umg-proyecto/
-├─ backend-dotnet/     # API REST (.NET 8 + EF Core + MySQL)
-└─ frontend-node/      # Frontend (Express + EJS)
+Tarea-a-back-y-front/
+├ back-dotnet/     # API REST (.NET 8 + EF Core + MySQL)
+└ front-node/      # Frontend (Express + EJS)
 ```
 
 ## Requisitos
 - .NET 8 SDK
-- Node.js LTS
+- Node.js 
 - MySQL Server + Workbench
 
 ## Base de datos (ejecuta en MySQL)
@@ -47,4 +47,4 @@ cp .env.sample .env  # ajusta API_BASE si tu backend usa otro puerto
 npm install
 npm start
 ```
-Abre: `http://localhost:3001/estudiantes`
+link de ingreso: `http://localhost:3001/estudiantes`
