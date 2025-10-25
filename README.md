@@ -12,7 +12,7 @@ Tarea-a-back-y-front/
 - Node.js 
 - MySQL Server + Workbench
 
-## Base de datos (ejecuta en MySQL)
+## Base de datos 
 CREATE DATABASE universidad;
 USE universidad;
 CREATE TABLE tipos_sangre (
