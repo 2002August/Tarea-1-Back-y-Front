@@ -13,9 +13,8 @@ umg-proyecto/
 - MySQL Server + Workbench
 
 ## Base de datos (ejecuta en MySQL)
-```sql
-CREATE DATABASE umg CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE umg;
+CREATE DATABASE universidad;
+USE universidad;
 CREATE TABLE tipos_sangre (
   id_tipo_sangre INT AUTO_INCREMENT PRIMARY KEY,
   sangre VARCHAR(10) NOT NULL
@@ -34,9 +33,6 @@ CREATE TABLE estudiantes (
   FOREIGN KEY (id_tipo_sangre) REFERENCES tipos_sangre(id_tipo_sangre)
 );
 
-```
-**Regex de Carné**: `^E(00[1-9]|0[1-9][0-9]|[1-9][0-9]{2})$`
-
 ## Backend
 ```
 cd backend-dotnet
@@ -44,8 +40,6 @@ dotnet restore
 # abre appsettings.json y coloca tu password de MySQL
 dotnet run
 ```
-Swagger: navega a `/swagger` en el puerto que indique la consola.
-
 ## Frontend
 ```
 cd frontend-node
